@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family:'Oswald', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #cccccc;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.content-row{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.content-cell{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+body{
+    background-color: #FDE895;
+}
+
+.h-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #7D7A6E;
+    height: 50px;
+    padding: 0 20px;
+}
+
+.h-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 60px;
+    box-shadow: 0 4px 5px -2px #666666;
+}
+
+.h-bottom h2{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.iconos{
+    color: #959595;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.input{
+    position: relative;
+}
+
+.input label{
+    position: absolute;
+    left: 15px;
+    top: 3px;
+    bottom: 6px;
+    font-weight: 300;
+    font-size: 12px;
+    color: #666666;
+}
+
+.input input{
+    border: none;
+    border-radius: 1px;
+    border-bottom: 3px solid #959595;
+    height: 50px;
+    background-color: white;
+    padding: 26px 14px 7px 14px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #5c5c5c;
+    width: 100%;
+    
+}
+
+.input input:hover{
+    background-color: #fdfae4;
+    cursor: pointer;
+}
+
+
+
+.capsule{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #6699FF;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 1px;
+    font-weight: 400;
+    font-size: 14px;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.combo{
+    position: relative;
+}
+
+.combo::after{
+    display: flex;
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    content: "\025be";
+    top: 0;
+    background-color: #ededed;
+    width: 30px;
+    height: 47.5px;
+    border: none;
+    border-bottom: solid 3px #959595;
+    border-radius: 0 1px 1px 0;
+    pointer-events: none;
+}
+
+.combo select{
+    border: none;
+    border-radius: 1px;
+    border-bottom: 3px solid #959595;
+    height: 50px;
+    background-color: white;
+    padding: 20px 14px 7px 11px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #5c5c5c;
+    width: 100%;
+}
+
+.combo label{
+    position: absolute;
+    left: 15px;
+    top: 3px;
+    bottom: 6px;
+    font-weight: 300;
+    font-size: 12px;
+    color: #666666;
+}
+
+.combo select:hover{
+    background-color: #fdfae4;
+    cursor: pointer;
+}
+
+.table{
+    display: flex;
+    background-color: white;
+    margin-top: 63px;
+    height: 630px;
+    gap: 2px;
+    padding: 2px 2px 0 2px; 
+    margin-bottom: 45px;
+    border: 1px solid #CCCCCC;
+    
+}
+
+.table .table-header .table-cell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #ededed;
+    padding: 2px;
+    left: 2px;
+    color: #666666;
+    font-size: 16px;
+}
+.table .table-detail .table-cell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    padding: 2px;
+    font-size: 16px;
+}
+#table-detail{
+    gap: 2px;
+    overflow: hidden;
+    overflow-y: scroll;
+    color: #959595;
+}
+.table .table-detail:nth-child(odd) .table-cell{
+    background-color: #F5F5FF;
+}
+
+.table .table-detail:nth-child(even) .table-cell{
+    background-color: #FAFAFF;
+}
+
